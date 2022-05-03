@@ -28,6 +28,7 @@ void loop() {
   // 
   
   // print out the value you read:
-  Serial.print(avg_volt-988.10354004, 8);
+  Serial.print(avg_volt-987, 8);
+  //Serial.print(avg_volt-988.10354004, 8);
   Serial.println();
 }

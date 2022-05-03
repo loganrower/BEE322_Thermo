@@ -12,12 +12,13 @@ baud = 115200
 fileName="Voltage_Temp.csv"
 
 ## The number of samples that we will take in one trial..
-samples = 20
+samples = 1
 print_labels = False # this will make sure that the line ids are not printed 
 
 ser = serial.Serial(uno_port, baud)
 print("Successfully Connected to Arduino Uno through:"+uno_port)
-file=open(fileName,"w")
+
+file=open(fileName,"a")
 print("Created file")
 
 line = 0
