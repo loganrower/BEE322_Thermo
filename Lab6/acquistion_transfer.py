@@ -21,17 +21,17 @@ print("Successfully Connected to Arduino Uno through:"+uno_port)
 file=open(fileName,"a")
 print("Created file")
 
-line = 0
+ser_bytes()
 
-while line <= samples:
-    if print_labels:
-        if line==0:
-            print("Printing Column Headers")
+# while line <= samples:
+#     if print_labels:
+#         if line==0:
+#             print("Printing Column Headers")
 
-        else:
-            print("Line"+str(line)+"writing...")
-    getData=str(ser.readline())
-    data=getData[0:][:-2]
-    print(data)
+#         else:
+#             print("Line"+str(line)+"writing...")
+#     getData=str(ser.readline())
+#     data=getData[0:][:-2]
+#     print(data)
 
 
