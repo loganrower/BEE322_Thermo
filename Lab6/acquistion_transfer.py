@@ -22,16 +22,16 @@ file=open(fileName,"a")
 print("Created file")
 
 ser_bytes()
+line = 0
+while line <= samples:
+    if print_labels:
+        if line==0:
+            print("Printing Column Headers")
 
-# while line <= samples:
-#     if print_labels:
-#         if line==0:
-#             print("Printing Column Headers")
-
-#         else:
-#             print("Line"+str(line)+"writing...")
-#     getData=str(ser.readline())
-#     data=getData[0:][:-2]
-#     print(data)
+        else:
+            print("Line"+str(line)+"writing...")
+    getData=str(ser.readline())
+    data=getData[0:][:-2]
+    print(data)
 
 

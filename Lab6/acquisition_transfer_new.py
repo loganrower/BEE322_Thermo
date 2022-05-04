@@ -3,7 +3,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import csv
 import numpy as np
-ser = serial.Serial('/dev/ttyACM0')
+ser = serial.Serial("COM3")
 ser.flushInput()
 
 # https://makersportal.com/blog/2018/2/25/python-datalogger-reading-the-serial-output-from-arduino-to-analyze-data-using-pyserial
