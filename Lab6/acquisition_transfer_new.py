@@ -3,6 +3,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import csv
 import numpy as np
+import time 
 ser = serial.Serial("COM3")
 ser.flushInput()
 
