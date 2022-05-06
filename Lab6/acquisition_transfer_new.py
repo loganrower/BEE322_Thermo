@@ -6,10 +6,10 @@ import csv
 import numpy as np
 import time 
 from curses import baudrate
-ser = serial.Serial("COM3", 9600, timeout=1)
+ser = serial.Serial("COM3", 115200, timeout=5) # changed to 115200
 
 while 1:
-    arduinoData=ser.readline()
+    arduinoData=ser.readline().decode('ascii')
     print(arduinoData)
 
 #ser.flushInput()
